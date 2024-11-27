@@ -1,0 +1,85 @@
+.calendar-container {
+    font-family: Arial, sans-serif;
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #0077b6;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .calendar-nav-button:hover {
+    color: #90e0ef;
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #00b4d8;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .calendar-day {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  
+  .calendar-day:hover {
+    background: #caf0f8;
+  }
+  
+  .calendar-day.selected {
+    background: #0077b6;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-day.past {
+    color: #ccc;
+    cursor: not-allowed;
+    background: #f1f1f1;
+  }
+  
+  .calendar-day.empty {
+    background: transparent;
+    cursor: default;
+  }
+  
